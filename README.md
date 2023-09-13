@@ -26,6 +26,7 @@ brew install direnv gnu-time
 (~) $ yarn install
 (~) $ direnv allow
 (~) $ pip3 install -r requirements.txt
+(~) $ acc config oj-path $(which oj) # 基本的には oj コマンドのパスは自動で検出されますが、必要に応じて手動で設定してください
 ```
 
 <h2 id="login">ログイン</h2>
@@ -50,7 +51,7 @@ brew install direnv gnu-time
 ```shell
 (~/abc001/a) $ code (vim/nvim) main.ts
 (~/abc001/a) $ oj -t "ts-node main.ts" -d ./tests
-(~/abc001/a) $ acc submit main.ts -- --language 5052
+(~/abc001/a) $ acc submit main.ts -- --language 5058
 ```
 
 <h2 id="how-to-use-python">使い方(Python)</h2>
